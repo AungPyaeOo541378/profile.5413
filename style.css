@@ -1,0 +1,13 @@
+.power-bar {
+  height: 2.4rem;
+  width: 100%;
+  background-color: rgb(3, 5, 42);
+  border-radius: 2rem;
+}
+.backG {
+  background-color: gray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
