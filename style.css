@@ -1,8 +1,11 @@
 .power-bar {
   height: 2.4rem;
   width: 100%;
-  background-color: rgb(3, 5, 42);
+  background-color: rgba(130, 137, 255, 0.613);
   border-radius: 2rem;
+}
+.power-bar:hover {
+  background-color: rgb(0, 0, 255);
 }
 .backG {
   background-color: gray;
