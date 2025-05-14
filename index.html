@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="bg-gray-800 sticky top-0">
+    <nav class="bg-gray-800 sticky top-0 z-10">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -88,16 +88,7 @@
           </div>
         </div>
       
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-          <div class="space-y-1 px-2 pt-2 pb-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-          </div>
-        </div>
+      
       </nav>
       
     <!--Navbar end-->
@@ -105,10 +96,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white"
     id="home">
     <!--Left role end-->
-        <div class="bg-black p-5 col-span-1 rounded-tr-[10rem]">
-            <img src="./userimg/IMG_3884.JPG" alt=""  class="rounded-full w-60 mx-auto mt-5 shadow-xl/20"><br><br>
-            <p class="text-yellow-500 text-center text-4xl">Mr . Aung Pyae Oo</p><br><br>
-            <p class="text-yellow-400 text-center">Web Developer</p><br><br>
+        <div class="bg-black p-5 col-span-1 rounded-tr-[10rem] max-sm:hidden">
+            <img src="./userimg/IMG_3884.JPG" alt=""  class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out"><br><br>
+            <p class="text-yellow-500 text-center text-4xl text-shadow-lg ">Mr . Aung Pyae Oo</p><br><br>
+            <p class="text-yellow-400 text-center text-shadow-lg">Web Developer</p><br><br>
             <img src="./userimg/webuse.svg" alt=""  class="mx-auto w-60 mt-5"><br><br>
             <img src="./userimg/webuse2.svg" alt=""  class=" mx-auto w-60 mt-5">
         </div>
@@ -116,7 +107,7 @@
     <!--Right role-->
         <div class="col-span-1 md:col-span-2">
           <div class="bg-white-200 p-5 mt-40">
-            <p class="text-5xl text-yellow-600 font-bold">About Me</p><br><br>
+            <p class="text-5xl text-yellow-600 font-bold text-shadow-lg">About Me</p><br><br>
             <p class=" text-yellow-900">I was born in Ah Thoke.Ayeyarwady
               Division,Myanmar. But now 1 live in Miki
               Town. Hyogo Division Japan. And then I
@@ -139,7 +130,7 @@
       </div>
       <br>
       <div class="bg-gray-200 p-5 mt-10">
-          <p class="text-5xl">I'm also have </p>
+          <p class="text-5xl text-shadow-lg">I'm also have </p>
           <br>
           <ul class=" text-yellow-900">
               <li>A website design perspective.</li>
@@ -155,7 +146,7 @@
       </div>
       <br>
       <div class="bg-white p-5 mt-10">
-          <p class="text-5xl">I was graduated from</p>
+          <p class="text-5xl text-shadow-lg">I was graduated from</p>
           <br>
           <p class=" text-yellow-900">Hinthada Technological
               University got Bachelor Of
@@ -176,33 +167,34 @@
 
     <!--Skill -->
     <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10" id="skill">
-      <p class="text-5xl text-center font-bold">Skill</p><br><br>
-      <p class="text-xl">Professional Skills</p>
+      <p class="text-5xl text-center font-bold text-shadow-lg">Skill</p><br><br>
+      <p class="text-3xl text-shadow-lg">Professional Skills</p>
       <br>
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-3 max-sm:grid-cols-1">
         <div class="col-span-1">
           <p>
-            <i class="fa-brands fa-html5 text-5xl ms-2 mb-2" style="color: #ff3030;"></i>
-            <span class="text-3xl ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+            <i class="fa-brands fa-html5 text-5xl ms-2 mb-2 shadow-xl/30" style="color: #ff3030;"></i>
+            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
           </p>
           <p>
-            <i class="fa-brands fa-css3-alt text-5xl ms-2 mb-2" style="color: #30a5ff;"></i>
-            <span class="text-3xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</span>
+            <i class="fa-brands fa-css3-alt text-5xl ms-2 mb-2 shadow-xl/30" style="color: #30a5ff;"></i>
+            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</span>
           </p>
           <p>
-            <i class="fa-brands fa-bootstrap text-5xl mb-2" style="color: #4416ff;"></i>
-            <span class="text-3xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTSTRAP</span>
+            <i class="fa-brands fa-bootstrap text-5xl mb-2 shadow-xl/30" style="color: #4416ff;"></i>
+            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTSTRAP</span>
           </p>
           <p>
-            <i class="fa-brands fa-js text-5xl ms-1 mb-2" style="color: #ffcc12;"></i>
-            <span class="text-3xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA SCRIPT</span>
+            <i class="fa-brands fa-js text-5xl ms-1 mb-2 shadow-xl/30" style="color: #ffcc12;"></i>
+            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA SCRIPT</span>
           </p>
         </div>
-        <div class="col-span-2">
-          <div class="power-bar mb-6"></div>
-          <div class="power-bar mb-6"></div>
-          <div class="power-bar mb-6"></div>
-          <div class="power-bar "></div>
+        <div class="col-span-2 max-sm:hidden">
+          <div class="h-10 bg-linear-to-r from-cyan-100 to-red-500 rounded-full mb-4 shadow-xl/30 "></div>
+          <div class="h-10 bg-linear-to-r from-cyan-100 to-blue-500 rounded-full mb-4 shadow-xl/30 "></div>
+          <div class="h-10 bg-linear-to-r from-cyan-100 to-blue-800 rounded-full mb-4 shadow-xl/30 "></div>
+          <div class="h-10 bg-linear-to-r from-cyan-100 to-yellow-500 rounded-full shadow-xl/30 "></div>
+          
         </div>
 
       </div>
@@ -210,9 +202,9 @@
     <!--Skill End-->
     <!--Project-->
   <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10" id="project">
-      <p class="text-5xl text-center font-bold">Projects</p>
+      <p class="text-5xl text-center font-bold text-shadow-lg">Projects</p>
                 <br><br>
-      <div class="grid grid-cols-5 gap-10">
+      <div class="grid grid-cols-5 gap-10 max-sm:grid-cols-1">
           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
             <p>Project Header</p><br>
             <img src="./userimg/webuser1.jpeg" alt><br>
@@ -269,9 +261,9 @@
     <!--Contact--> 
     <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10"
     id="contact-me">
-    <p class="text-5xl text-center font-bold ">Contact Me</p>
+    <p class="text-5xl text-center font-bold text-shadow-lg ">Contact Me</p>
     <br><br>
-    <div class="flex justify-between px-32 flex-wrap">
+    <div class="flex justify-between px-32 flex-wrap ">
         <div
             class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 ">Call &nbsp;<i class="fa-sharp fa-solid fa-phone"></i></div>
         <div
@@ -283,40 +275,18 @@
     <!--Contact end-->
     <!--Footer-->
     <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10">
-      <p class="text-5xl text-center font-bold">Hello World &nbsp;&nbsp;<i class="fa-solid fa-earth-americas motion-safe:animate-spin" style="color: #09a6fa;"></i></p>
+      <p class="text-5xl text-center font-bold text-shadow-lg">Hello World &nbsp;&nbsp;<i class="fa-solid fa-earth-americas motion-safe:animate-spin z-0 " style="color: #09a6fa;"></i></p>
       <img src="./userimg/macbook-pro-14-inch-m3-pro-or-m3.png" alt="">
       <p class="text-5xl text-center font-bold ">Current Laptop Specification</p><br><br>
       <p class="text-3xl text-center  "> MacBook Pro (14-inch, M3 Pro, Nov 2023) - Tech Specs</p>
-      <div class="grid grid-cols-3">
-        
-        <div class="col-span-1">
+      <div class="">
           <p>
-            Apple M3 chip
-            
-            8-core CPU with 4 performance cores and 4 efficiency cores
-            
-            10-core GPU
-            
-            Hardware-accelerated ray tracing
-            
-            16-core Neural Engine
-            
-            100GB/s memory bandwidth
-            
-            Media Engine
-            
-            Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW
-            
-            Video decode engine
-            
-            Video encode engine
-            
-            ProRes encode and decode engine
-            
+            Apple M3 chip 8-core CPU with 4 performance cores and 4 efficiency cores
+            10-core GPU Hardware-accelerated ray tracing 16-core Neural Engine 100GB/s memory bandwidth
+            Media Engine Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW
+            Video decode engine Video encode engine ProRes encode and decode engine
             AV1 decode</p>
-        </div>
-        <div class="col-span-1">2</div>
-        <div class="col-span-1">3</div>
+
       </div>
 
     </div>
