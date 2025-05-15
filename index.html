@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Aung</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet">
+  </head>
+  <body>
     <!--Navbar-->
     <nav class="bg-gray-800 sticky top-0 z-10">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
-                <!--
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
                   Icon when menu is closed.
       
                   Menu open: "hidden", Menu closed: "block"
                 -->
-                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <!--
+              <svg class="block size-6" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
                   Icon when menu is open.
       
                   Menu open: "block", Menu closed: "hidden"
                 -->
-                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-             
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="#home" class="navinput rounded-md  px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"  aria-current="page">Home</a>
-                  <a href="#skill" class="navinput rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Skill</a>
-                  <a href="#project" class="navinput rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Projects</a>
-                  <a href="#contact-me" class="navinput rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Contact Me</a>
-                </div>
+              <svg class="hidden size-6" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#home"
+                  class="nav-input rounded-md  px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  aria-current="page">Home</a>
+                <a href="#skill"
+                  class="nav-input rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skill</a>
+                <a href="#project"
+                  class="nav-input rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                <a href="#contact-me"
+                  class="nav-input rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact
+                  Me</a>
               </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View notifications</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-                </svg>
-              </button>
-      
-              <!-- Profile dropdown -->
-              <div class="relative ml-3">
-                <div>
-                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                    <span class="absolute -inset-1.5"></span>
-                    <span class="sr-only">Open user menu</span>
-                    <img class="size-8 rounded-full" src="./userimg/a.jpeg.png" alt="">
-                  </button>
-                </div>
-      
-                <!--
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button"
+              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button"
+                  class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                  id="user-menu-button" aria-expanded="false"
+                  aria-haspopup="true">
+                  <span class="absolute -inset-1.5 cursor-pointer"
+                    id="profile-img"></span>
+                  <span class="sr-only">Open user menu</span>
+                  <img class="size-8 rounded-full cursor-pointer"
+                    src="./userimg/a.jpeg.png"
+                    alt>
+                </button>
+              </div>
+
+              <!--
                   Dropdown menu, show/hide based on menu state.
       
                   Entering: "transition ease-out duration-100"
@@ -77,224 +105,308 @@
                     From: "transform opacity-100 scale-100"
                     To: "transform opacity-0 scale-95"
                 -->
-                <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                  <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" -->
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                </div>
+              <div
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-hidden hidden"
+                id="profile-icon"
+                role="menu" aria-orientation="vertical"
+                aria-labelledby="user-menu-button" tabindex="-1">
+                <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem" tabindex="-1" id="user-menu-item-0">Your
+                  Profile</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem" tabindex="-1"
+                  id="user-menu-item-1">Settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem" tabindex="-1" id="user-menu-item-2">Sign
+                  out</a>
               </div>
             </div>
           </div>
         </div>
-      
-      
-      </nav>
-      
+      </div>
+
+    </nav>
+
     <!--Navbar end-->
     <!--First Room-->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white"
-    id="home">
-    <!--Left role end-->
-        <div class="bg-black p-5 col-span-1 rounded-tr-[10rem] max-sm:hidden">
-            <img src="./userimg/IMG_3884.JPG" alt=""  class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out"><br><br>
-            <p class="text-yellow-500 text-center text-4xl text-shadow-lg ">Mr . Aung Pyae Oo</p><br><br>
-            <p class="text-yellow-400 text-center text-shadow-lg">Web Developer</p><br><br>
-            <img src="./userimg/webuse.svg" alt=""  class="mx-auto w-60 mt-5"><br><br>
-            <img src="./userimg/webuse2.svg" alt=""  class=" mx-auto w-60 mt-5">
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white"
+      id="home">
+      <!--Left role end-->
+      <div class="bg-black p-5 col-span-1 rounded-tr-[10rem] max-sm:hidden">
+        <img src="./userimg/IMG_3884.JPG" alt
+          class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out"><br><br>
+        <p class="text-yellow-500 text-center text-4xl text-shadow-lg ">Mr . Aung Pyae Oo</p><br><br>
+        <p class="text-yellow-400 text-center text-shadow-lg">Web
+          Developer</p><br><br>
+        <img src="./userimg/webuse.svg" alt class="mx-auto w-60 mt-5"><br><br>
+        <img src="./userimg/webuse2.svg" alt class=" mx-auto w-60 mt-5">
+      </div>
+      <!--Left role-->
+      <!--Right role-->
+      <div class="col-span-1 md:col-span-2">
+        <div class="bg-black p-5 rounded-lg  md:hidden">
+          <img src="./userimg/IMG_3884.JPG" alt
+            class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out">
         </div>
-    <!--Left role-->
-    <!--Right role-->
-        <div class="col-span-1 md:col-span-2">
-          <div class="bg-white-200 p-5 mt-40">
-            <p class="text-5xl text-yellow-600 font-bold text-shadow-lg">About Me</p><br><br>
-            <p class=" text-yellow-900">I was born in Ah Thoke.Ayeyarwady
-              Division,Myanmar. But now 1 live in Miki
-              Town. Hyogo Division Japan. And then I
-              was learning Web Development.Since
-              About 2024 December I started learn
-              Java Script Programming, And still
-              learning Html, CSS, java-script,
-              bootstrap too. You can view my learning
-              project in Project section.
+        <div class="bg-white-200 p-5 mt-5 md:mt-20">
+          <p class="text-5xl text-yellow-600 font-bold text-shadow-lg">About
+            Me</p><br><br>
+          <p class=" text-yellow-900">I was born in Ah Thoke.Ayeyarwady
+            Division,Myanmar. But now 1 live in Miki
+            Town. Hyogo Division Japan. And then I
+            was learning Web Development.Since
+            About 2024 December I started learn
+            Java Script Programming, And still
+            learning Html, CSS, java-script,
+            bootstrap too. You can view my learning
+            project in Project section.
           </p>
           <br>
           <p><i class="fa-solid fa-phone size-6 animate-bounce "></i>
-              <span>09912442013</span></p>
+            <span>09912442013</span></p>
           <br>
           <p><i class="fa-brands fa-facebook "></i>
-              <a target="_blank"
-                  href="https://shorturl.at/neGTK"> &nbsp;&nbsp;https://shorturl.at/neGTK</a>
+            <a target="_blank"
+              href="https://shorturl.at/neGTK">
+              &nbsp;&nbsp;https://shorturl.at/neGTK</a>
           </p>
           <br>
-      </div>
-      <br>
-      <div class="bg-gray-200 p-5 mt-10">
+        </div>
+        <br>
+        <div class="bg-gray-200 p-5 mt-10">
           <p class="text-5xl text-shadow-lg">I'm also have </p>
           <br>
           <ul class=" text-yellow-900">
-              <li>A website design perspective.</li>
-              <li>I passed Net Test N2 for Japanese language.</li>
-              <li>I can work in accordance with Deadline.</li>
-              <li>I can work in a team and have a strong desire to
-                  learn.</li>
-              <li>I can complete tasks within the specified time.</li>
-              <li>I have good teamwork and communication skills.</li>
+            <li>A website design perspective.</li>
+            <li>I passed Net Test N2 for Japanese language.</li>
+            <li>I can work in accordance with Deadline.</li>
+            <li>I can work in a team and have a strong desire to
+              learn.</li>
+            <li>I can complete tasks within the specified time.</li>
+            <li>I have good teamwork and communication skills.</li>
 
           </ul>
           <br>
-      </div>
-      <br>
-      <div class="bg-white p-5 mt-10">
+        </div>
+        <br>
+        <div class="bg-white p-5 mt-10">
           <p class="text-5xl text-shadow-lg">I was graduated from</p>
           <br>
           <p class=" text-yellow-900">Hinthada Technological
-              University got Bachelor Of
-              Technology(2015) and Bachelor OF
-              Engineering (2020) major of Electronic
-              Communication.l also got the chance of
-              Master Of Engineering and I could not
-              attend for some many reason!You can check
-              graduated certifications in skills section.
+            University got Bachelor Of
+            Technology(2015) and Bachelor OF
+            Engineering (2020) major of Electronic
+            Communication.l also got the chance of
+            Master Of Engineering and I could not
+            attend for some many reason!You can check
+            graduated certifications in skills section.
           </p>
           <br>
           <br>
+        </div>
       </div>
-      </div>
-    <!--Right role end-->
+      <!--Right role end-->
     </div>
     <!--First Room End-->
 
     <!--Skill -->
     <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10" id="skill">
-      <p class="text-5xl text-center font-bold text-shadow-lg">Skill</p><br><br>
+      <p class="text-5xl text-center font-bold text-shadow-lg ">Skill</p><br><br>
       <p class="text-3xl text-shadow-lg">Professional Skills</p>
       <br>
       <div class="grid grid-cols-3 max-sm:grid-cols-1">
         <div class="col-span-1">
           <p>
-            <i class="fa-brands fa-html5 text-5xl ms-2 mb-2 shadow-xl/30" style="color: #ff3030;"></i>
-            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+            <i class="fa-brands fa-html5 text-5xl ms-2 mb-2 shadow-xl/30"
+              style="color: #ff3030;"></i>
+            <span
+              class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
           </p>
           <p>
-            <i class="fa-brands fa-css3-alt text-5xl ms-2 mb-2 shadow-xl/30" style="color: #30a5ff;"></i>
-            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</span>
+            <i class="fa-brands fa-css3-alt text-5xl ms-2 mb-2 shadow-xl/30"
+              style="color: #30a5ff;"></i>
+            <span
+              class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</span>
           </p>
           <p>
-            <i class="fa-brands fa-bootstrap text-5xl mb-2 shadow-xl/30" style="color: #4416ff;"></i>
-            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTSTRAP</span>
+            <i class="fa-brands fa-bootstrap text-5xl mb-2 shadow-xl/30"
+              style="color: #4416ff;"></i>
+            <span
+              class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOTSTRAP</span>
           </p>
           <p>
-            <i class="fa-brands fa-js text-5xl ms-1 mb-2 shadow-xl/30" style="color: #ffcc12;"></i>
-            <span class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA SCRIPT</span>
+            <i class="fa-brands fa-js text-5xl ms-1 mb-2 shadow-xl/30"
+              style="color: #ffcc12;"></i>
+            <span
+              class="text-3xl text-shadow-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA
+              SCRIPT</span>
           </p>
         </div>
         <div class="col-span-2 max-sm:hidden">
-          <div class="h-10 bg-linear-to-r from-cyan-100 to-red-500 rounded-full mb-4 shadow-xl/30 "></div>
-          <div class="h-10 bg-linear-to-r from-cyan-100 to-blue-500 rounded-full mb-4 shadow-xl/30 "></div>
-          <div class="h-10 bg-linear-to-r from-cyan-100 to-blue-800 rounded-full mb-4 shadow-xl/30 "></div>
-          <div class="h-10 bg-linear-to-r from-cyan-100 to-yellow-500 rounded-full shadow-xl/30 "></div>
-          
+          <div
+            class="h-10 bg-linear-to-r from-cyan-100 to-red-500 rounded-full mb-4 shadow-xl/30 hover:-translate-y-1 duration-300"></div>
+          <div
+            class="h-10 bg-linear-to-r from-cyan-100 to-blue-500 rounded-full mb-4 shadow-xl/30 hover:-translate-y-1 duration-300"></div>
+          <div
+            class="h-10 bg-linear-to-r from-cyan-100 to-blue-800 rounded-full mb-4 shadow-xl/30 hover:-translate-y-1 duration-300"></div>
+          <div
+            class="h-10 bg-linear-to-r from-cyan-100 to-yellow-500 rounded-full shadow-xl/30 hover:-translate-y-1 duration-300"></div>
+
         </div>
 
       </div>
     </div>
     <!--Skill End-->
     <!--Project-->
-  <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10" id="project">
-      <p class="text-5xl text-center font-bold text-shadow-lg">Projects</p>
-                <br><br>
-      <div class="grid grid-cols-5 gap-10 max-sm:grid-cols-1">
-          <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-           <div class="shadow-xl/20 border border-gray-200 rounded-lg p-3">
-            <p>Project Header</p><br>
-            <img src="./userimg/webuser1.jpeg" alt><br>
-            <p>Footer</p>
-           </div>
-
-    </div>
-    <!--Project End-->
-    <!--Contact--> 
     <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10"
-    id="contact-me">
-    <p class="text-5xl text-center font-bold text-shadow-lg ">Contact Me</p>
-    <br><br>
-    <div class="flex justify-between px-32 flex-wrap ">
+      id="project">
+      <p class="text-5xl text-center font-bold text-shadow-lg">Projects</p>
+      <br><br>
+      <div class="grid grid-cols-5 gap-10 max-sm:grid-cols-1">
         <div
-            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 ">Call &nbsp;<i class="fa-sharp fa-solid fa-phone"></i></div>
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
         <div
-            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 ">Email &nbsp;<i class="fa-solid fa-envelope"></i></div>
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
         <div
-            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 ">Facebook &nbsp;<i class="fa-brands fa-facebook"></i></div>
-    </div>
-</div>
-    <!--Contact end-->
-    <!--Footer-->
-    <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10">
-      <p class="text-5xl text-center font-bold text-shadow-lg">Hello World &nbsp;&nbsp;<i class="fa-solid fa-earth-americas motion-safe:animate-spin z-0 " style="color: #09a6fa;"></i></p>
-      <img src="./userimg/macbook-pro-14-inch-m3-pro-or-m3.png" alt="">
-      <p class="text-5xl text-center font-bold ">Current Laptop Specification</p><br><br>
-      <p class="text-3xl text-center  "> MacBook Pro (14-inch, M3 Pro, Nov 2023) - Tech Specs</p>
-      <div class="">
-          <p>
-            Apple M3 chip 8-core CPU with 4 performance cores and 4 efficiency cores
-            10-core GPU Hardware-accelerated ray tracing 16-core Neural Engine 100GB/s memory bandwidth
-            Media Engine Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW
-            Video decode engine Video encode engine ProRes encode and decode engine
-            AV1 decode</p>
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
+        <div
+          class="shadow-xl/20 border border-gray-200 rounded-lg p-3 cursor-pointer hover:-translate-y-4 duration-300">
+          <p>Project Header</p><br>
+          <img src="./userimg/webuser1.jpeg" alt><br>
+          <p>Footer</p>
+        </div>
 
       </div>
+      <!--Project End-->
+      <!--Contact-->
+      <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10"
+        id="contact-me">
+        <p class="text-5xl text-center font-bold text-shadow-lg ">Contact Me</p>
+        <br><br>
+        <div class="flex justify-between px-10 md:px-32 flex-wrap ">
+          <div
+            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 mb-2 md:mb-0 ms-4">Call
+            &nbsp;<i class="fa-sharp fa-solid fa-phone"></i></div>
+          <div
+            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 mb-2 md:mb-0 ms-3">Email
+            &nbsp;<i class="fa-solid fa-envelope"></i></div>
+          <div
+            class="shadow-lg rounded-lg border border-gray-200 px-12 py-2 mb-2 md:mb-0">Facebook
+            &nbsp;<i class="fa-brands fa-facebook"></i></div>
+        </div>
+      </div>
+      <!--Contact end-->
+      <!--Footer-->
+      <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white mt-10">
+        <p class="text-5xl text-center font-bold text-shadow-lg">Hello World
+          &nbsp;&nbsp;<i
+            class="fa-solid fa-earth-americas motion-safe:animate-spin z-0 "
+            style="color: #09a6fa;"></i></p>
+        <img src="./userimg/macbook-pro-14-inch-m3-pro-or-m3.png" alt>
+        <p class="text-5xl text-center font-bold ">Current Laptop
+          Specification</p><br><br>
+        <p class="text-3xl text-center  "> MacBook Pro (14-inch, M3 Pro, Nov
+          2023) - Tech Specs</p>
+        <div class>
+          <p>
+            Apple M3 chip 8-core CPU with 4 performance cores and 4 efficiency
+            cores
+            10-core GPU Hardware-accelerated ray tracing 16-core Neural Engine
+            100GB/s memory bandwidth
+            Media Engine Hardware-accelerated H.264, HEVC, ProRes, and ProRes
+            RAW
+            Video decode engine Video encode engine ProRes encode and decode
+            engine
+            AV1 decode</p>
+
+        </div>
+
+      </div>
+      <!--Footer End-->
+    </div>
+
+    <!-- Footer -->
+
+    <div
+      class="grid grid-cols-3 max-sm:grid-cols-3 mt-15 max-sm:flex bg-gray-100 pt-5">
+
+      <div class="col-md ">
+        <img src="./userimg/webuse.svg" alt class="mx-auto w-60 mt-5">
+      </div>
+      <div class="col-md text-center ">
+        <div>
+          <i class="fa-brands fa-facebook text-3xl"
+            style="color: #0060aa;"></i>&nbsp;&nbsp;&nbsp;
+          <i class="fa-brands fa-github text-3xl"
+            style="color:  #0060aa;"></i>&nbsp;&nbsp;&nbsp;
+          <i class="fa-brands fa-line text-3xl"
+            style="color:  #0060aa;"></i><br><br>
+        </div>
+        <p><i class="fa-solid fa-phone " style="color:  #0060aa;"></i>
+          <span style="color:  #0060aa;">09912442013</span></p>
+        <br>
+        <p><i class="fa-brands fa-facebook " style="color:  #0060aa;"></i>
+          <a target="_blank" style="color:  #0060aa;"
+            href="https://shorturl.at/neGTK">
+            &nbsp;&nbsp;https://shorturl.at/neGTK</a>
+        </p>
+      </div>
+      <div class="col-md ">
+        <img src="./userimg/webuse2.svg" alt class=" mx-auto w-60 mt-5"></div>
 
     </div>
-    <!--Footer End-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-    
-
-
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="app.js"></script>
 </html>

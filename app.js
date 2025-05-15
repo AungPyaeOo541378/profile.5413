@@ -1,14 +1,14 @@
-// var navText = document.querySelectorAll("#nav-texts");
-var navInput =document.querySelectorAll(".navinput");
-for (let i=0 ; i<navInput.length; i++ ){
-    for(let j=0 ; j<navInput.length; j++ ){
-        navInput[j].classList.remove("bg-gray-900");
-    }
-    navInput[i].addEventListener("click",function(){
+$(document).on("click", ".nav-input", function () {
+  $(".nav-input").each(function () {
+    $(this).removeClass("bg-gray-900");
+  });
+  $(this).addClass("bg-gray-900");
+});
 
-   
-        navInput[i].classList.add("bg-gray-900");
-    })
-};
-
-
+$(document).on("click", "#profile-img", function () {
+  if ($("#profile-icon").hasClass("hidden")) {
+    $("#profile-icon").removeClass("hidden");
+  } else {
+    $("#profile-icon").addClass("hidden");
+  }
+});
